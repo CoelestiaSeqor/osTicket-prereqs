@@ -22,8 +22,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-Sure! Here's a step-by-step guide on how to install osTicket on Windows. But before we begin, let's list the prerequisites:
-
 Prerequisites:
 1. Windows operating system (e.g., Windows 10, Windows Server 2016/2019)
 2. Web server software (e.g., Apache, Nginx)
