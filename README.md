@@ -44,7 +44,7 @@ Step 1: Create an Azure Virtual Machine
 - Set a name (e.g., "Vm-osticket").
 - Choose a username (e.g., "labuser") and password (e.g., "osTicketPassword1!").
    
- <p>
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
@@ -94,66 +94,84 @@ Step 6: Install MySQL
 - Launch the MySQL Configuration Wizard after installation and select "Standard Configuration".
 
 <p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+   
 Step 7: Open IIS as an Admin and Register PHP
 - Open Internet Information Services (IIS) as an administrator.
 - Register PHP by clicking on the server name and double-clicking "PHP Manager".
 - Click "Register new PHP version" and browse to the PHP installation directory (C:\PHP).
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 8: Reload IIS and Install osTicket
 - Stop and start the IIS server to reload the changes.
 - Download osTicket v1.15.8 from the installation files.
 - Extract the contents of the zip file and copy the "upload" folder to "c:\inetpub\wwwroot".
 - Rename the "upload" folder to "osTicket".
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 9: Enable PHP Extensions
 - Open IIS, go to "Default Web Site", and double-click "PHP Manager".
 - Click "Enable or disable an extension" and enable the following extensions: php_imap.dll, php_intl.dll, php_opcache.dll.
 - Refresh the osTicket site in your browser to observe the changes.
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 10: Rename and Assign Permissions to ost-config.php
 - Rename "ost-sampleconfig.php" to "ost-config.php" located at "C:\inetpub\wwwroot\osTicket\include\".
 - Disable inheritance for "ost-config.php" and remove all permissions.
 - Add a new permission for "Everyone" with "Read" access.
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 11: Continue osTicket Setup in the Browser
 - In the browser, click "Continue" to proceed with osTicket setup.
 - Provide a name for the helpdesk and the default email address to receive customer emails.
 - Click "Continue" and proceed with the installation.
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 12: Set up the Database with HeidiSQL
 - Download and install HeidiSQL from the installation files.
 - Open HeidiSQL and create a new session using "root" as the username and "Password1" as the password.
 - Connect to the session and create a database called "osTicket".
+   
 </p>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
 Step 13: Complete osTicket Setup
 - Continue the osTicket setup in the browser.
 - Enter the following database details: MySQL Database: osTicket, MySQL Username: root, MySQL Password: Password1.
 - Click "Install Now!" to complete the installation.
+   
 </p>
 <p>
+   
 Congratulations! osTicket should now be installed without errors. You can access the help desk login page at http://localhost/osTicket/scp/login.php. The end-users can access osTicket at
 Congratulations! You have successfully installed osTicket on Windows. You can now begin using it to manage your support tickets.
