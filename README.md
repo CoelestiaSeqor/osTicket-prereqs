@@ -173,5 +173,6 @@ Step 13: Complete osTicket Setup
 </p>
 <p>
    
-Congratulations! osTicket should now be installed without errors. You can access the help desk login page at http://localhost/osTicket/scp/login.php. The end-users can access osTicket at
-Congratulations! You have successfully installed osTicket on Windows. You can now begin using it to manage your support tickets.
+Congratulations! osTicket should now be installed without errors. 
+- You can access the help desk login page at http://localhost/osTicket/scp/login.php.
+- The end-users can access osTicket at http://localhost/osTicket/ 
