@@ -32,9 +32,21 @@ Prerequisites:
 
 Now, let's move on to the installation process:
 
+<h2>Installation Steps</h2>
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 Step 1: Set up a Web Server
 1. Install a web server software of your choice (e.g., Apache, Nginx).
 2. Configure the web server to work with PHP. This typically involves enabling the PHP module and restarting the server.
+   
+ <p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 Step 2: Install PHP
 1. Download the latest version of PHP for Windows from the official PHP website (https://www.php.net/downloads.php).
@@ -45,11 +57,21 @@ Step 2: Install PHP
    - Enable the PHP extensions required by osTicket (e.g., curl, gd, imap, intl, json, mbstring, xml, zip).
    - Set the date.timezone parameter to your timezone (e.g., `date.timezone = America/New_York`).
 6. Save the `php.ini` file.
+   
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 Step 3: Set up a Database Server
 1. Install MySQL or MariaDB on your Windows system.
 2. Create a new database for osTicket.
 3. Create a new user and grant it all privileges on the osTicket database.
+   
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 Step 4: Download and Configure osTicket
 1. Visit the official osTicket website (https://osticket.com/) and download the latest stable release.
@@ -58,10 +80,20 @@ Step 4: Download and Configure osTicket
 4. Open the `ost-config.php` file in a text editor.
 5. Configure the database settings by providing the database server, database name, username, and password.
 6. Save the `ost-config.php` file.
+   
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 Step 5: Set Permissions
 1. Grant read and write permissions to the web server process on the `ost-config.php` file.
 2. Ensure that the web server has sufficient permissions to read and write to other necessary directories within the osTicket installation.
+   
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
 Step 6: Complete the Installation
 1. Open a web browser and navigate to the osTicket URL (e.g., `http://localhost/osticket`).
@@ -70,29 +102,3 @@ Step 6: Complete the Installation
 4. Finish the installation and log in to the osTicket admin panel.
 
 Congratulations! You have successfully installed osTicket on Windows. You can now begin using it to manage your support tickets.
-
-<h2>Installation Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
