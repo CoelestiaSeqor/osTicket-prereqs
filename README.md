@@ -7,7 +7,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -18,14 +18,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 Prerequisites:
-1. Windows operating system (e.g., Windows 10, Windows Server 2016/2019)
-2. Web server software (e.g., Apache, Nginx)
-3. PHP version 7.2 or later
-4. MySQL or MariaDB database server
-5. PHP extensions: curl, gd, imap, intl, json, mbstring, xml, zip
-6. A text editor (e.g., Notepad++, Sublime Text)
-
-Now, let's move on to the installation process:
+- Microsoft Azure
+- Remote Desktop software
+   - Remote Desktop Connection on Windows, Microsoft Remote Desktop on macOS
+-osTicket installation files
 
 <h2>Installation Steps</h2>
 
