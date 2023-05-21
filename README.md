@@ -36,7 +36,7 @@ Step 1: Create an Azure Virtual Machine
    - When creating the VM, allow it to create a new Virtual Network (Vnet)
    
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/a/m2O07fN" height="80%" width="80%" alt="Create a VM"/>
 </p>
 <p>
    
