@@ -40,29 +40,55 @@ Now, let's move on to the installation process:
 <p>
 
 Step 1: Create an Azure Virtual Machine
-- Create a Windows 10 virtual machine with 4 vCPUs.
-- Set a name (e.g., "Vm-osticket").
-- Choose a username (e.g., "labuser") and password (e.g., "osTicketPassword1!").
+- Create a Resource Group
+- Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
+   - When creating the VM, allow it to create a new Virtual Network (Vnet)
    
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
-Step 2: Install and Enable IIS with CGI
-- Open the "Server Manager" on the Azure Virtual Machine.
-- Go to "Manage" -> "Add Roles and Features".
-- Select "Web Server (IIS)" and click "Next".
-- Enable CGI under "Application Development Features" by checking the box.
-- Complete the installation process.
+   
+Step 2: Create an Azure Virtual Machine Windows 10, 4 vCPUs
+- Name: Vm-osticket
+- Username: labuser (for example/whatever you chose)
+- Password: osTicketPassword1! (for example/whatever you chose)
    
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+   
+Step 3: Remote into VM
+- In Azure click on your Virtual Machine "Vm-osticket"
+- Find the Public IP Address
+- Click start and type "Remote Desktop Connection"
+- Enter the puiblci IP for the VM and the username
+- Enter password when prompted for credentials
+- When dialog pops up, click "Yes" to connect
+      
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+   
+Step 4: Install and Enable IIS with CGI
+- In the VM click the windows icon and search for "Control Panel"
+- Click on "Programs"
+- Click "Turn Windows features on or off"
+- Check and expand "Internet Information Services" 
+- Check and expand "World Wide Web Services"
+- Check and expand "Application Development Features"
+- Check "CGI"
+    
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-Step 3: Install PHP Manager for IIS and Rewrite Module
+Step 5: Install PHP Manager for IIS and Rewrite Module
 - Download and install "PHP Manager for IIS" (PHPManagerForIIS_V1.5.0.msi) from the installation files.
+   - Follow prompts to install.
 - Download and install the "Rewrite Module" (rewrite_amd64_en-US.msi) from the installation files.
    
 <p>
@@ -72,6 +98,8 @@ Step 3: Install PHP Manager for IIS and Rewrite Module
 
 Step 4: Install PHP
 - Create a directory called "C:\PHP".
+   - To do this open file explorer, navigate to "This PC" then to "Windows (C:)"
+   - Create a new folder in the C: Drive, name it "PHP"
 - Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files.
 - Extract the contents of the zip file into the "C:\PHP" directory.
    
@@ -90,8 +118,10 @@ Step 5: Install VC_redist.x86.exe
 
 Step 6: Install MySQL
 - Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
-- Choose the "Typical Setup" and set the password to "Password1" (or your preferred password).
+- Choose the "Typical Setup".
 - Launch the MySQL Configuration Wizard after installation and select "Standard Configuration".
+- Set the password to your preferred password.
+- Click "Execute"
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -99,8 +129,9 @@ Step 6: Install MySQL
 <p>
    
 Step 7: Open IIS as an Admin and Register PHP
+- Click on the windows button and type "IIS"
 - Open Internet Information Services (IIS) as an administrator.
-- Register PHP by clicking on the server name and double-clicking "PHP Manager".
+- Register PHP by clicking on the server name (Vm-osticket\labuser) under the "Connections tab, and double-clicking "PHP Manager".
 - Click "Register new PHP version" and browse to the PHP installation directory (C:\PHP).
    
 </p>
@@ -122,8 +153,13 @@ Step 8: Reload IIS and Install osTicket
 <p>
    
 Step 9: Enable PHP Extensions
-- Open IIS, go to "Default Web Site", and double-click "PHP Manager".
+- Open IIS, stop and start the IIS server to reload the changes.
+- In the "Connections" tab, expand the server name (Vm-osTicket\labuser).
+   - Expand "Sites" .
+   - Select "Default Web Site".
+   - Double-click "PHP Manager".
 - Click "Enable or disable an extension" and enable the following extensions: php_imap.dll, php_intl.dll, php_opcache.dll.
+   - You can filter the extensions to make it easier to find the ones listed.
 - Refresh the osTicket site in your browser to observe the changes.
    
 </p>
