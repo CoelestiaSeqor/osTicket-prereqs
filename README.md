@@ -21,7 +21,7 @@ Prerequisites:
 - Microsoft Azure
 - Remote Desktop software
    - Remote Desktop Connection on Windows, Microsoft Remote Desktop on macOS
--osTicket installation files
+- osTicket installation files
 
 <h2>Installation Steps</h2>
 
