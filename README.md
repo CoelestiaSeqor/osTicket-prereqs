@@ -24,42 +24,40 @@ Prerequisites:
 - osTicket installation files
 
 <h2>Installation Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-
-Step 1: Create an Azure Virtual Machine
+Step 1: Create an Azure Resource Group
 - Create a Resource Group
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
    - When creating the VM, allow it to create a new Virtual Network (Vnet)
-   
+
 <p>
-<img src="https://imgur.com/a/m2O07fN" height="80%" width="80%" alt="Create a VM"/>
+<img src="https://i.imgur.com/7xbYa0s.png" height="80%" width="80%" alt="Create a Resource Group"/>
 </p>
 <p>
-   
+
 Step 2: Create an Azure Virtual Machine Windows 10, 4 vCPUs
 - Name: Vm-osticket
 - Username: labuser (for example/whatever you chose)
 - Password: osTicketPassword1! (for example/whatever you chose)
    
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/OHdszg0.png" height="80%" width="80%" alt="Create a VM"/>
 </p>
 <p>
    
 Step 3: Remote into VM
 - In Azure click on your Virtual Machine "Vm-osticket"
 - Find the Public IP Address
+   <p>
+<img src="https://i.imgur.com/GZtAUOz.png" height="80%" width="80%" alt="Where to Locate Public IP of VM"/>
+</p>
+<p>
 - Click start and type "Remote Desktop Connection"
 - Enter the puiblci IP for the VM and the username
 - Enter password when prompted for credentials
 - When dialog pops up, click "Yes" to connect
       
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/7BmLzjc.png" height="80%" width="80%" alt="Remote Desktop Connection"/>
 </p>
 <p>
    
@@ -73,21 +71,29 @@ Step 4: Install and Enable IIS with CGI
 - Check "CGI"
     
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mvExk3J.png" height="80%" width="80%" alt="Enable CGI in IIS"/>
 </p>
 <p>
 
-Step 5: Install PHP Manager for IIS and Rewrite Module
+Step 5: Install PHP Manager for IIS
 - Download and install "PHP Manager for IIS" (PHPManagerForIIS_V1.5.0.msi) from the installation files.
    - Follow prompts to install.
+   
+   <p>
+<img src="https://i.imgur.com/3uprWdP.png" height="80%" width="80%" alt="PHP Manager Setup Wizard"/>
+</p>
+<p>
+   
+Step 6: Install Rewrite Module
 - Download and install the "Rewrite Module" (rewrite_amd64_en-US.msi) from the installation files.
+   - Follow prompts to install.
    
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Be5y8hs.png" height="80%" width="80%" alt="Rewrite Module"/>
 </p>
 <p>
 
-Step 6: Install PHP
+Step 7: Create and populate PHP directory
 - Create a directory called "C:\PHP".
    - To do this open file explorer, navigate to "This PC" then to "Windows (C:)"
    - Create a new folder in the C: Drive, name it "PHP"
@@ -95,7 +101,7 @@ Step 6: Install PHP
 - Extract the contents of the zip file into the "C:\PHP" directory.
    
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1FFmHrY.png" height="80%" width="80%" alt="PHP Directory"/>
 </p>
 <p>
 
@@ -103,31 +109,51 @@ Step 5: Install VC_redist.x86.exe
 - Download and install "VC_redist.x86.exe" from the installation files.
    
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vERahRJ.png" height="80%" width="80%" alt="VC Redist install"/>
 </p>
 <p>
 
 Step 7: Install MySQL
 - Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files.
 - Choose the "Typical Setup".
+   
+   <p>
+<img src="https://i.imgur.com/GiDYFlM.png" height="80%" width="80%" alt="MySQL Typical Setup "/>
+</p>
+<p>
+   
 - Launch the MySQL Configuration Wizard after installation and select "Standard Configuration".
+- Leave "Install As Windows Service" checked and click "Next".
 - Set the password to your preferred password.
 - Click "Execute"
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/NKGVg3S.png" height="80%" width="80%" alt="MySQL Standard Config "/>
 </p>
 <p>
    
 Step 8: Open IIS as an Admin and Register PHP
 - Click on the windows button and type "IIS"
 - Open Internet Information Services (IIS) as an administrator.
+      
+</p>
+<p>
+<img src="https://i.imgur.com/NKGVg3S.png" height="80%" width="80%" alt="IIS as Admin"/>
+</p>
+<p>
+   
 - Register PHP by clicking on the server name (Vm-osticket\labuser) under the "Connections tab, and double-clicking "PHP Manager".
+     
+</p>
+<p>
+<img src="https://i.imgur.com/RdwMN7Y.png" height="80%" width="80%" alt="PHP Manager"/>
+</p>
+<p>
 - Click "Register new PHP version" and browse to the PHP installation directory (C:\PHP).
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3mbpMZE.png" height="80%" width="80%" alt="PHP setup Path"/>
 </p>
 <p>
    
@@ -139,7 +165,7 @@ Step 9: Reload IIS and Install osTicket
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3mbpMZE.png" height="80%" width="80%" alt="PHP setup Path"/>
 </p>
 <p>
    
