@@ -256,12 +256,13 @@ Before setting up osTicket perform the following clean up:
    - Select "Everyone", click "Edit"
    - Uncheck all boxes except "Read", click "OK"
    - Click "Apply" and "OK" until back at file.
-- Congratulations! Your osTicket installation has been completed successfully.
-   - You can access the help desk login page at http://localhost/osTicket/scp/login.php.
-   - The end-users can access osTicket at http://localhost/osTicket/.
 
 </p>
 <p>
 <img src="https://i.imgur.com/ItAtdpV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+- Congratulations! Your osTicket installation has been completed successfully.
+   - You can access the help desk login page at http://localhost/osTicket/scp/login.php.
+   - The end-users can access osTicket at http://localhost/osTicket/.
