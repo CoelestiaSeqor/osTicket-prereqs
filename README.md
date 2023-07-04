@@ -28,6 +28,7 @@ Step 1: Create an Azure Resource Group
 - Create a Resource Group
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
    - When creating the VM, allow it to create a new Virtual Network (Vnet)
+   
 
 <p>
 <img src="https://i.imgur.com/7xbYa0s.png" height="80%" width="80%" alt="Create a Resource Group"/>
