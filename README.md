@@ -211,13 +211,6 @@ Step 11: Rename and Assign Permissions to ost-config.php
 Step 12: Set up the Database with HeidiSQL
 - Download and install HeidiSQL from the installation files.
    - Follow prompts until installed.
-   
-</p>
-<p>
-<img src="https://https://i.imgur.com/Ij0CAOp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-  
 - Open HeidiSQL and create a new session using "root" as the username and "Password1" as the password.
 - Connect to the session and create a database called "osTicket".
    - Right Click on "Unamed" tab, select "Create New", select "datatbase".
@@ -242,7 +235,7 @@ Step 13: Complete osTicket Setup
    
 </p>
 <p>
-<img src="https://https://i.imgur.com/Ij0CAOp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EU67pgg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
    
@@ -250,6 +243,13 @@ Step 14: Clean Up
 Before setting up osTicket perform the following clean up:
 - Delete: C:\inetpub\wwwroot\osTicket\setup.
    - Navigate to folder, right click on folder and select "Delete".
+
+</p>
+<p>
+<img src="https://i.imgur.com/nhO075R.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 - Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php.
    - Navigate to folder, right click on folder and select "Properties".
    - Select "Security Tab", click "Advanced"
@@ -260,8 +260,8 @@ Before setting up osTicket perform the following clean up:
    - You can access the help desk login page at http://localhost/osTicket/scp/login.php.
    - The end-users can access osTicket at http://localhost/osTicket/.
 
- </p>
+</p>
 <p>
-<img src="https://i.imgur.com/EU67pgg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ItAtdpV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
