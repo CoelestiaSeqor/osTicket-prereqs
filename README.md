@@ -180,7 +180,7 @@ Step 10: Enable PHP Extensions
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zUz9aq9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
    
@@ -190,6 +190,12 @@ Step 11: Rename and Assign Permissions to ost-config.php
    - Right click on "ost-configr.php" select "Properties".
    - Select "Security" Tab, then click "Advanced".
    - Click "Disable inheritance", Select "Remove all inherited permissions on this object".
+   - </p>
+<p>
+<img src="https://i.imgur.com/F1fqQTL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+   
 - Add a new permissions for "Everyone".
    - Click "Add", click "Select a principal".
    - In the text field type "everyone", then click "Check Names", then "OK".
@@ -198,13 +204,20 @@ Step 11: Rename and Assign Permissions to ost-config.php
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ohPNhoj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
    
 Step 12: Set up the Database with HeidiSQL
 - Download and install HeidiSQL from the installation files.
    - Follow prompts until installed.
+   
+</p>
+<p>
+<img src="https://https://i.imgur.com/Ij0CAOp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  
 - Open HeidiSQL and create a new session using "root" as the username and "Password1" as the password.
 - Connect to the session and create a database called "osTicket".
    - Right Click on "Unamed" tab, select "Create New", select "datatbase".
@@ -212,7 +225,7 @@ Step 12: Set up the Database with HeidiSQL
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/71x6bnk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
    
@@ -229,7 +242,7 @@ Step 13: Complete osTicket Setup
    
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://https://i.imgur.com/Ij0CAOp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
    
@@ -249,6 +262,6 @@ Before setting up osTicket perform the following clean up:
 
  </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EU67pgg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
