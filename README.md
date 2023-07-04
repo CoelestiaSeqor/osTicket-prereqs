@@ -47,7 +47,7 @@ Step 2: Create an Azure Virtual Machine Windows 10, 4 vCPUs
 Step 3: Remote into VM
 - In Azure click on your Virtual Machine "Vm-osticket"
 - Find the Public IP Address
-- 
+
 <p>
 <img src="https://i.imgur.com/GZtAUOz.png" height="80%" width="80%" alt="Where to Locate Public IP of VM"/>
 </p>
