@@ -33,7 +33,7 @@ Step 1: Create an Azure Resource Group
 <img src="https://i.imgur.com/7xbYa0s.png" height="80%" width="80%" alt="Create a Resource Group"/>
 </p>
 <p>
-
+        
 Step 2: Create an Azure Virtual Machine Windows 10, 4 vCPUs
 - Name: Vm-osticket
 - Username: labuser (for example/whatever you chose)
