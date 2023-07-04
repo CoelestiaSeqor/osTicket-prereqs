@@ -24,6 +24,7 @@ Prerequisites:
 - osTicket installation files
 
 <h2>Installation Steps</h2>
+
 Step 1: Create an Azure Resource Group
 - Create a Resource Group
 - Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
